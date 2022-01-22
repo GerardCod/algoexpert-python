@@ -4,8 +4,8 @@ def validateSubSequence(array, sequence):
         validateSubSequence -> validates if a sequence of elements is a subsequence of a list.
 
         ### Parameters
-        array: the list where it will validate the subsequence.
-        sequence: the potential subsequence of elements
+        - array: the list where it will validate the subsequence.
+        - sequence: the potential subsequence of elements
 
         ### Returns 
         - True when the sequence is a valid subsequence of array.
