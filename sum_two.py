@@ -1,3 +1,31 @@
+def twoNumberSum(array, targetSum):
+    """
+        twoNumberSum finds the two numbers whose sum is equals to targetSum with the
+        binary search strategy.
+
+        array: the collection of numbers that can sum the target number.
+        targetSum: the target number to find.
+
+        returns a list with the two numbers that sums the target number.
+        if there are not number that can sum the target, it returns an empty list. 
+
+    """
+    array.sort()
+    left = 0
+    right = len(array) - 1
+
+    while left < right:
+        currentSum = array[left] + array[right]
+        if currentSum == targetSum:
+            return [array[left], array[right]]
+        elif currentSum < targetSum:
+            left += 1
+        elif currentSum > targetSum:
+            right -= 1
+    
+    return []
+
+
 def two_number_sum_pointers(array, target_sum):
     """
         two_number_sum_pointers finds the two numbers whose sum is equals to target_sum
